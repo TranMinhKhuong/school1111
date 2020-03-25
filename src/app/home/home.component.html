@@ -1,3 +1,37 @@
-<p>
-home works!
-</p>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+	<div class="container" >
+		<a class="navbar-brand" routerLink="/home" routerLinkActive="active">Start Bootstrap</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" routerLink="/school-list" routerLinkActive="active">School
+						<span class="sr-only">(current)</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" routerLink="/school-add" routerLinkActive="active">Service</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" routerLink="/school-edit" routerLinkActive="active">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" routerLink="/school-manager" routerLinkActive="active">Manager</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<div class="container" style="margin-top: 50px;">
+	<div class="row">
+		<div class="col-lg-3">
+			<app-class></app-class>
+		</div>
+		<div class="col-lg-9">
+			<app-slide></app-slide>
+			<app-school-list></app-school-list>
+		</div>
+	</div>
+</div>

@@ -1,3 +1,10 @@
-<p>
-school-add works!
-</p>
+<h2>Add Product</h2>
+<form class="w-50 mx-auto mt-3" style="margin-top: 100px;">
+
+  <div class="form-group">
+    <label for="">  {{address}}</label>
+    <input type="text" name="name" class="form-control"placeholder="School Name" [(ngModel)]="school.name">
+    <input type="text" name="presindent" class="form-control"placeholder="president" [(ngModel)]="school.president">
+  </div>
+  <button type="submit" class="btn btn-primary" (click)="addSchool()">Submit</button>
+</form>

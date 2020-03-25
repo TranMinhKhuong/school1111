@@ -1,3 +1,24 @@
-<p>
-school-list works!
-</p>
+<div class="row" style="margin-top: 100px;" >
+	<!-- <app-product ngClass="col-lg-4 col-md-6 mb-4"></app-product>
+    <app-product ngClass="col-lg-4 col-md-6 mb-4"></app-product>
+    <app-product ngClass="col-lg-4 col-md-6 mb-4"></app-product> -->
+	<div ngClass="col-lg-4 col-md-6 mb-4" *ngFor="let school of schools">
+		<div class="card h-100">
+			<a href="#"><img class="card-img-top" [src]="school.logo" alt=""></a>
+				<div class="card-body">
+					<h4 class="card-title">
+						<a href="#">{{school.name}}</a>
+					</h4>
+					<h5>${{school.address}}</h5>
+					<p class="card-text">{{school.president}}</p>
+					<p class="card-text">{{product.province}}</p>
+				</div>
+				<div class="card-footer">
+					<!-- <button class="btn btn-primary" (click)="removeItem(product.id)">Delete</button> -->
+					<button class="btn btn-primary" routerLink="/school/{{school.id}}">Detail</button>
+					<!-- <input type="text" name="" id="" (keyup)="changeName($event)" class="form-control mt-3"> -->
+					<!-- <input type="text" name="" id="" [(ngModel)]="product.name" class="form-control mt-3"> -->
+				</div>
+		</div>
+	</div>
+</div>

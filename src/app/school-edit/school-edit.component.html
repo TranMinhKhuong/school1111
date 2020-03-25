@@ -1,3 +1,9 @@
-<p>
-school-edit works!
-</p>
+<h2 style="margin-top:50px;">Edit Product</h2>
+<form class="w-50 mx-auto mt-3" *ngIf="product">
+  <div class="form-group">
+    <label for="">  {{address}}</label>
+    <input type="text" name="name" class="form-control"placeholder="Product Name" [(ngModel)]="product.name">
+    <input type="text" name="price" class="form-control"placeholder="Price" [(ngModel)]="product.price">
+  </div>
+  <button type="submit" class="btn btn-primary" (click)="updateProduct()">Submit</button>
+</form>

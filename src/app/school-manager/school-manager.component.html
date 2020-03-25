@@ -1,3 +1,26 @@
-<p>
-school-manager works!
-</p>
+<div class="container">
+<div class="row" style="margin-top: 100px">
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Logo</th>
+      <th scope="col">Address</th>
+      <th scope="col">President</th>
+      <th scope="col">Province</th>
+      <th scope="col">Delete</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let product of products">
+      <td>{{product.name}}</td>
+       <td><img width="50px" height="50px" src="{{product.logo}}" alt=""></td>
+      <td>{{product.address}}</td>
+      <td>{{product.president}}</td>
+      <td>{{product.province}}</td>
+      <td><button class="btn btn-primary" (click)="removeSchool()">Delete</button></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+</div>
