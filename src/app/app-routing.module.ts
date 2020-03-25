@@ -8,8 +8,6 @@ import { NotFoundComponent } from "./not-found/not-found.component";
 import { SchoolManagerComponent } from "./school-manager/school-manager.component";
 import { HomeComponent } from "./home/home.component";
 
-
-
 const routes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
   { path: "home", component: HomeComponent },
