@@ -12,12 +12,12 @@
     </tr>
     </thead>
     <tbody>
-    <tr *ngFor="let product of products">
-      <td>{{product.name}}</td>
-       <td><img width="50px" height="50px" src="{{product.logo}}" alt=""></td>
-      <td>{{product.address}}</td>
-      <td>{{product.president}}</td>
-      <td>{{product.province}}</td>
+    <tr *ngFor="let school of schools">
+      <td>{{school.name}}</td>
+       <td><img width="50px" height="50px" src="{{school.logo}}" alt=""></td>
+      <td>{{school.address}}</td>
+      <td>{{school.president}}</td>
+      <td>{{school.province}}</td>
       <td><button class="btn btn-primary" (click)="removeSchool()">Delete</button></td>
     </tr>
     </tbody>

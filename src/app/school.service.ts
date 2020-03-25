@@ -8,7 +8,7 @@ import {Observable} from 'rxjs';
     providedIn: 'root'
   })
 export class SchoolService {
-  api = '';
+  api = 'https://5e79b50717314d0016133423.mockapi.io/schools';
   school = data;
   constructor(
     private http : HttpClient
