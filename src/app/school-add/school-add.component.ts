@@ -17,6 +17,7 @@ export class SchoolAddComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    
   }
   addSchool(){
     this.schoolService.addSchool(this.school).subscribe(data =>{

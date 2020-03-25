@@ -36,5 +36,4 @@ export class SchoolManagerComponent implements OnInit {
       this.router.navigateByUrl("/school-list");
     });
   }
-
 }

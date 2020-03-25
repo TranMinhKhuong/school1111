@@ -1,10 +1,11 @@
-<h2>Add Product</h2>
+<h2>Add School</h2>
 <form class="w-50 mx-auto mt-3" style="margin-top: 100px;">
 
   <div class="form-group">
-    <label for="">  {{address}}</label>
     <input type="text" name="name" class="form-control"placeholder="School Name" [(ngModel)]="school.name">
+    <input type="text" name="address" class="form-control"placeholder="Address" [(ngModel)]="school.address">
     <input type="text" name="presindent" class="form-control"placeholder="president" [(ngModel)]="school.president">
+    <input type="text" name="province" class="form-control"placeholder="Province" [(ngModel)]="school.province">
   </div>
   <button type="submit" class="btn btn-primary" (click)="addSchool()">Submit</button>
 </form>

@@ -1,7 +1,7 @@
 export class School {
   id : number;
   name : string;
-  logon : string;
+  logo : string;
   address : string;
   president : string;
   province : string;

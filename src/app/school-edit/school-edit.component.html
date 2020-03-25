@@ -1,9 +1,8 @@
 <h2 style="margin-top:50px;">Edit Product</h2>
-<form class="w-50 mx-auto mt-3" *ngIf="product">
+<form class="w-50 mx-auto mt-3" *ngIf="school">
   <div class="form-group">
-    <label for="">  {{address}}</label>
-    <input type="text" name="name" class="form-control"placeholder="Product Name" [(ngModel)]="product.name">
-    <input type="text" name="price" class="form-control"placeholder="Price" [(ngModel)]="product.price">
+    <input type="text" name="name" class="form-control"placeholder="School Name" [(ngModel)]="school.name">
+    <input type="text" name="price" class="form-control"placeholder="President" [(ngModel)]="school.president">
   </div>
-  <button type="submit" class="btn btn-primary" (click)="updateProduct()">Submit</button>
+  <button type="submit" class="btn btn-primary" (click)="updateSchool()">Submit</button>
 </form>

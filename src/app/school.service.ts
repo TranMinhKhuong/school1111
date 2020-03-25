@@ -26,11 +26,11 @@ export class SchoolService {
     return this.http.delete<School>(`${this.api}/${school.id}`, school);
   }
 
-  addSchool(school){
+  addSchool(school):Observable<School>{
     return this.http.post<School>(`${this.api}`, school);
   }
 
-  updateSchool(school){
+  updateSchool(school):Observable<School>{
     return this.http.put<School>(`${this.api}/${school.id}`, school);
   }
 
